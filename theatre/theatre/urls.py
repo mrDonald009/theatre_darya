@@ -17,7 +17,7 @@ from django.contrib import admin
 from django.urls import path
 
 
-from mainapp.views import index, gallery, about_us, contacts, email_address
+from mainapp.views import index, gallery, about_us, contacts
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -25,8 +25,6 @@ urlpatterns = [
     path('gallery/', gallery, name='gallery'),
     path('about_us/', about_us, name='about_us'),
     path('contacts/', contacts, name='contacts'),
-    #path('email_address/', email_address, name='email_address'),
-
 
 ]
 

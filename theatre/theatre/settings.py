@@ -124,10 +124,3 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
-
-EMAIL_HOST = 'smtp.mail.ru'
-EMAIL_PORT = 465
-EMAIL_HOST_USER = 'saveliy_petrov_2011@mail.ru'
-EMAIL_HOST_PASSWORD = 'OueRtgReY22$'
-EMAIL_USE_TLS = False
-EMAIL_USE_SSL = True
