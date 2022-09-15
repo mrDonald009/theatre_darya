@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/static/css/style.css" />
+        <title>О нас</title>
+        <meta name="description" content="Театральная школа Новочебоксарск" />
+        <link
+            rel="apple-touch-icon"
+            sizes="57x57"
+            href="/static/icons/favicons/apple-icon-57x57.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="60x60"
+            href="/static/icons/favicons/apple-icon-60x60.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="72x72"
+            href="/static/icons/favicons/apple-icon-72x72.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="76x76"
+            href="/static/icons/favicons/apple-icon-76x76.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="114x114"
+            href="/static/icons/favicons/apple-icon-114x114.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="120x120"
+            href="/static/icons/favicons/apple-icon-120x120.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="144x144"
+            href="/static/icons/favicons/apple-icon-144x144.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="152x152"
+            href="/static/icons/favicons/apple-icon-152x152.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="/static/icons/favicons/apple-icon-180x180.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="192x192"
+            href="/static/icons/favicons/android-icon-192x192.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="/static/icons/favicons/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="96x96"
+            href="/static/icons/favicons/favicon-96x96.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="/static/icons/favicons/favicon-16x16.png"
+        />
+        <link rel="manifest" href="/static/icons/favicons/manifest.json" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta
+            name="msapplication-TileImage"
+            content="/static/icons/favicons/ms-icon-144x144.png"
+        />
+        <meta name="theme-color" content="#ffffff" />
+    </head>
+    <div class="container main-section__nav-container">
+        <header class="main-section__header">
+            <h6 class="hashtag">#зажигаем детские сердца</h6>
+        </header>
+        <nav class="main-section__nav nav-menu">
+            <ul class="nav-menu__list">
+                <li class="nav-menu__list-item">
+                    <a href="{% url 'index' %}">Главная</a>
+                </li>
+                <li class="nav-menu__list-item">
+                    <a href="{% url 'gallery' %}">Галерея</a>
+                </li>
+                <li class="nav-menu__list-item">
+                    <a href="{% url 'contacts' %}">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <section id="about-us" class="second-section">
+            <div class="container second-section__container">
+                <!--заголвок-->
+                <h2 class="second-section__title title">Группы обучения</h2>
+
+                <!--карточки-->
+                <div class="second-section__cards">
+                    <div class="second-section__cards-item cards-item">
+                        <p class="cards-item__text">5-7 лет</p>
+                        <img
+                            class="second-section__foto"
+                            src="/static/img/5_7.png"
+                            alt="foto"
+                        />
+                    </div>
+                    <div class="second-section__cards-item cards-item">
+                        <p class="cards-item__text">8-10 лет</p>
+                        <img
+                            class="second-section__foto"
+                            src="/static/img/8_10.png"
+                            alt="foto"
+                        />
+                    </div>
+                    <div class="second-section__cards-item cards-item">
+                        <p class="cards-item__text">12 +</p>
+                        <img
+                            class="second-section__foto"
+                            src="/static/img/12.png"
+                            alt="foto"
+                        />
+                    </div>
+                </div>
+
+                <!--иконки второй секции-->
+                <div class="second-section__icons-box icons-box">
+                    <div class="second-section__icons-item icons-item">
+                        <img
+                            src="/static/icons/01-icon.svg"
+                            alt="icon"
+                            class="icons-item__img"
+                        />
+                        <p class="icons-item__text">
+                            <span>60</span> <br />
+                            наград<br />
+                            международного<br />уровня
+                        </p>
+                    </div>
+
+                    <div class="second-section__icons-item icons-item">
+                        <img
+                            src="/static/icons/03-icon.svg"
+                            alt="icon"
+                            class="icons-item__img"
+                        />
+                        <p class="icons-item__text">
+                            <span>150</span> <br />
+                            учеников<br />
+                            обучается
+                        </p>
+                    </div>
+
+                    <div class="second-section__icons-item icons-item">
+                        <img
+                            src="/static/icons/04-icon.svg"
+                            alt="icon"
+                            class="icons-item__img"
+                        />
+                        <p class="icons-item__text">
+                            <span>8</span> <br />
+                            лет <br />
+                            преподавания
+                        </p>
+                    </div>
+                </div>
+
+                <!-- звезды -->
+                <div class="second-section__star-first star-small">
+                    <img src="/static/img/star-small.svg" alt="star" />
+                </div>
+                <div class="second-section__star-second star-small">
+                    <img src="/static/img/star-small.svg" alt="star" />
+                </div>
+            </div>
+        </section>
+
+</html>
