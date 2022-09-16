@@ -1,5 +1,5 @@
 from django.shortcuts import render
-
+from django.forms import models
 # функции = вьюхи = контроллеры
 
 
@@ -17,3 +17,12 @@ def contacts(request):
 
 def create_email(request):
     return render(request, 'mainapp/create_email.html')
+
+
+def test_context(request):
+    context = {
+        'title' : 'geekshop',
+        'header' : 'Добро пожаловать на сайт!',
+        'username' : 'Иван Иванов',
+    }
+    return render(request, 'mainapp/test-context.html', context)

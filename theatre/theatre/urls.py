@@ -17,14 +17,16 @@ from django.contrib import admin
 from django.urls import path
 
 
-from mainapp.views import index, gallery, about_us, contacts, create_email
+from mainapp.views import index, gallery, about_us, contacts, create_email, test_context
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', index, name='index'),
-    path('gallery/', gallery, name='gallery'),
-    path('about_us/', about_us, name='about_us'),
-    path('contacts/', contacts, name='contacts'),
-    path('create_email/', create_email, name='create_email'),
+    path('gallery/', gallery, name='gallery'),#name='' названия для url-ов в html шаблонах.
+    path('about_us/', about_us, name='about_us'),#name='' названия для url-ов в html шаблонах.
+    path('contacts/', contacts, name='contacts'),#name='' названия для url-ов в html шаблонах.
+    path('create_email/', create_email),
+    path('test-context/', test_context),
+
 ]
 
