@@ -1,6 +1,8 @@
-from django.shortcuts import redirect, render
+from django.shortcuts import render
 
 # функции = вьюхи = контроллеры
+
+
 def index(request):
     return render(request, 'mainapp/index.html')
 
@@ -12,3 +14,6 @@ def about_us(request):
 
 def contacts(request):
     return render(request, 'mainapp/contacts.html')
+
+def create_email(request):
+    return render(request, 'mainapp/create_email.html')
